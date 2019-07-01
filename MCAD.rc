@@ -1,0 +1,1071 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MCAD.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MCAD.ico"
+
+IDR_MMTYPE              ICON                    "res\\MCADDoc.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\TbMain.bmp"
+
+IDR_TB_PAGE             BITMAP                  "res\\TbPage.bmp"
+
+IDR_TB_LINE             BITMAP                  "res\\TbLine.bmp"
+
+IDB_START               BITMAP                  "res\\MCADStart.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 31, 36
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      IDTBS_SCURVE
+    SEPARATOR
+    BUTTON      IDTBS_DRAW_LINE
+    BUTTON      IDTBS_DRAW_CURVE
+    BUTTON      IDTBS_DRAW_RECT
+    SEPARATOR
+    BUTTON      IDTBS_ADRILL
+    BUTTON      IDTBS_ADD_TEXT
+    SEPARATOR
+    BUTTON      IDTBS_SPIECE
+    BUTTON      IDTBS_CUT_SEQ
+    BUTTON      IDMP_ADDOUTLINE1
+    BUTTON      IDMP_ADDOUTLINE2
+    SEPARATOR
+    BUTTON      TDTB_ZOOMALL
+    SEPARATOR
+    BUTTON      IDCB_DEMO_START
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+    SEPARATOR
+    BUTTON      IDTB_MAN_CTRL
+    SEPARATOR
+    BUTTON      IDCB_START
+    BUTTON      IDCB_PAUSE
+    BUTTON      IDCB_CANCEL
+END
+
+IDR_TB_PAGE TOOLBAR 64, 24
+BEGIN
+    BUTTON      IDTB_PAGE1
+    BUTTON      IDTB_PAGE2
+    BUTTON      IDTB_PAGE3
+    BUTTON      IDTB_PAGE4
+    BUTTON      IDTB_PAGE5
+END
+
+IDR_TB_LINE TOOLBAR 36, 36
+BEGIN
+    BUTTON      IDML_TO_PEN
+    BUTTON      IDML_TO_MM
+    BUTTON      IDML_CURVE_TO_SLOT
+    BUTTON      IDML_CURVE_MERGE
+    BUTTON      IDML_BK_BY_ANGLE
+    BUTTON      IDML_CURVE_REVERSE
+    BUTTON      IDML_CURVE_EXPAND
+    BUTTON      IDML_FORCE_TO_POLY
+    BUTTON      IDML_POLY_INFLATE
+    BUTTON      IDML_POLY_SHRINK
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建模版工程(&N)\tCtrl+N",          ID_FILE_NEW
+        MENUITEM "打开模版工程(&O)...\tCtrl+O",       ID_FILE_OPEN
+        MENUITEM "保存模版工程(&S)\tCtrl+S",          ID_FILE_SAVE
+        MENUITEM "模版工程另存为(&A)...",              ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "导入plt",                       IDM_PLT_IMPORT
+        MENUITEM SEPARATOR
+        MENUITEM "输出当前页为PLT文件",                 ID_FILE_EXPORT_PLT
+        MENUITEM SEPARATOR
+        POPUP "添加特殊图形"
+        BEGIN
+            MENUITEM "蛇形线",                         ID_FILE_ADD_SNAKE_LINE
+            MENUITEM "钻孔点阵",                        ID_FILE_ADD_DRILL_TABLE
+            MENUITEM "铣刀与笔重合测试图形",                  ID_FILE_ADD_MP_TEST
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "设置(&S)"
+    BEGIN
+        MENUITEM "软件设置(&S)",                    IDM_PARA_SOFT
+        MENUITEM "机器设置(&M)",                    IDTB_MAC_PARA
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 MM(&A)...",                ID_APP_ABOUT
+        MENUITEM "使用说明(&M)",                    IDM_APP_MANUAL
+        MENUITEM "观看操作视频(&V)",                  IDM_APP_VIDEO
+        MENUITEM "更新授权(&U)",                    IDM_AUTH_UPDATE
+        MENUITEM "超级用户(&S)",                    IDM_SUPER_USER
+    END
+END
+
+IDR_MENU_PIECE MENU
+BEGIN
+    POPUP "RMENU_PIECE"
+    BEGIN
+        MENUITEM "复制(&C)\tCtrl+C",              IDMP_MAKEACOPY
+        POPUP "镜像(&M)"
+        BEGIN
+            MENUITEM "镜像(创建副本)(&C)\t",              IDMP_COPY_MIRROR
+            MENUITEM "镜像(&M)\t",                    IDMP_MIRROR
+        END
+        POPUP "旋转(&R)"
+        BEGIN
+            MENUITEM "逆时针旋转1度\t(快捷键K)",             IDMP_01CCW
+            MENUITEM "顺时针旋转1度\t(快捷键L)",             IDMP_01CW
+            MENUITEM "逆时针旋转90度\t(快捷键,)",            IDMP_90CCW
+            MENUITEM "顺时针旋转90度\t(快捷键.)",            IDMP_90CW
+        END
+        MENUITEM "选中裁片放回列表\tF2",                IDMP_SEL_TOLIST
+        MENUITEM "所有裁片放回列表",                    IDMP_ALL_TOLIST
+        MENUITEM "删除选中裁片\tDEL",                 IDMP_REMOVE
+        MENUITEM "删除所有裁片",                      IDMP_REMOVE_ALL
+    END
+END
+
+IDR_MENU_LIST MENU
+BEGIN
+    POPUP "RMENU_LIST"
+    BEGIN
+        MENUITEM "清空列表(&Q)",                    IDM_LIST_CLEAR
+    END
+END
+
+IDR_MENU_LINE MENU
+BEGIN
+    POPUP "RMENU_LINE"
+    BEGIN
+        MENUITEM "设为起点",                        IDML_SET_CURVE_START
+        MENUITEM "自动识别外轮廓",                     IDML_FIND_OUTLINE
+        MENUITEM "曲线变打孔",                       IDML_LINE_TO_DOT
+        MENUITEM "删除选中的曲线\tDEL",                IDML_CURVE_REMOVE
+        MENUITEM "强制闭合",                        IDML_FORCE_TO_POLY
+        MENUITEM "曲线打断\tD",                     IDML_BK_BY_ANGLE
+        MENUITEM "选中曲线反向\tF",                   IDML_CURVE_REVERSE
+        MENUITEM "选中曲线变为开槽\tC",                 IDML_CURVE_TO_SLOT
+        MENUITEM "曲线合并(首尾相连)\tH",               IDML_CURVE_MERGE
+        MENUITEM "闭合曲线外扩\tW",                   IDML_POLY_INFLATE
+        MENUITEM "闭合曲线内缩\tN",                   IDML_POLY_SHRINK
+        MENUITEM "曲线延伸",                        IDML_CURVE_EXPAND
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "A",            IDCB_SEL_ALL,           VIRTKEY, CONTROL, NOINVERT
+    "D",            IDML_BK_BY_ANGLE,       VIRTKEY, NOINVERT
+    "H",            IDML_CURVE_MERGE,       VIRTKEY, NOINVERT
+    "F",            IDML_CURVE_REVERSE,     VIRTKEY, NOINVERT
+    "C",            IDML_CURVE_TO_SLOT,     VIRTKEY, NOINVERT
+    "2",            IDML_TO_MM,             VIRTKEY, CONTROL, NOINVERT
+    "1",            IDML_TO_PEN,            VIRTKEY, CONTROL, NOINVERT
+    "K",            IDMP_01CCW,             VIRTKEY, NOINVERT
+    "L",            IDMP_01CW,              VIRTKEY, NOINVERT
+    ",",            IDMP_90CCW,             ASCII,  NOINVERT
+    ".",            IDMP_90CW,              ASCII,  NOINVERT
+    "C",            IDMP_MAKEACOPY,         VIRTKEY, CONTROL, NOINVERT
+    VK_F2,          IDMP_SEL_TOLIST,        VIRTKEY, NOINVERT
+    " ",            TDTB_ZOOMALL,           ASCII,  NOINVERT
+    "W",            IDML_POLY_INFLATE,      VIRTKEY, NOINVERT
+    "N",            IDML_POLY_SHRINK,       VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDDLG_PROP_OUTLINE1 DIALOG 0, 0, 275, 210
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "外框属性"
+FONT 10, "宋体"
+BEGIN
+    CONTROL         "左上圆角",IDCHK_LT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,12,48,10
+    CONTROL         "左下圆角",IDCHK_LB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,84,48,10
+    CONTROL         "右上圆角",IDCHK_RT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,213,12,48,10
+    CONTROL         "右下圆角",IDCHK_RB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,213,84,48,10
+    GROUPBOX        "",IDC_STATIC,7,3,261,94
+    PUSHBUTTON      "创建外框",IDOK,60,188,50,14
+    PUSHBUTTON      "取消",IDCANCEL,164,188,50,14
+    LTEXT           "上边距离(mm)",IDC_STATIC,112,15,47,8
+    EDITTEXT        IDCE_TOP,112,28,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_LEFT,13,53,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_RIGHT,206,53,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_BOTTOM,112,80,54,14,ES_AUTOHSCROLL
+    LTEXT           "下边距离(mm)",IDC_STATIC,112,66,47,8
+    LTEXT           "左边距离(mm)",IDC_STATIC,13,41,47,8
+    LTEXT           "右边距离(mm)",IDC_STATIC,206,41,47,8
+    LTEXT           "圆角半径(mm)",IDC_STATIC,10,114,47,8
+    EDITTEXT        IDCE_RADIUS,64,111,33,14,ES_AUTOHSCROLL
+    CONTROL         "外框路径顺时针",IDCHK_CLOCKWISE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,162,113,68,10
+    COMBOBOX        IDCOMBO_CUT_POS,79,145,62,62,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,7,100,261,33
+    GROUPBOX        "",IDC_STATIC,7,136,261,44
+    LTEXT           "剪口间距(mm)：",IDC_STATIC,12,165,54,8
+    EDITTEXT        IDCE_CUT_WIDTH,218,146,42,14,ES_AUTOHSCROLL
+    LTEXT           "剪口宽度(mm)：",IDC_STATIC,155,148,54,8
+    LTEXT           "剪口深度(mm)：",IDC_STATIC,155,165,54,8
+    EDITTEXT        IDCE_CUT_DIST,79,162,62,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_CUT_DEPTH,218,162,42,14,ES_AUTOHSCROLL
+    LTEXT           "剪口位置：",IDC_STATIC,12,148,54,8
+END
+
+IDDLG_PWD DIALOG 0, 0, 175, 35
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "输入"
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDCE_PWD,87,10,42,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,132,10,36,14
+    LTEXT           "请输入密码：",IDTXT_PWD,8,12,75,8
+END
+
+IDDLG_PROP_LINE_INFLATE DIALOG 0, 0, 147, 72
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "曲线延伸"
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDCE_BEFORE,98,10,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_AFTER,98,28,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,10,49,50,14
+    PUSHBUTTON      "取消",IDCANCEL,86,49,50,14
+    LTEXT           "起点提前(-50~200mm):",IDC_STATIC,11,13,79,8
+    LTEXT           "终点延伸(-50~200mm):",IDC_STATIC,11,31,79,8
+END
+
+IDDLG_TEST DIALOGEX 0, 0, 247, 210
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "调机/测试"
+FONT 10, "宋体", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,147,187,50,14
+    CONTROL         "画笔落下",IDTCHK_PD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,117,73,41,10
+    CONTROL         "切刀落下",IDTCHK_CD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,117,92,41,10
+    CONTROL         "铣刀落下",IDTCHK_MD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,161,136,41,10
+    EDITTEXT        IDTCE_PWM_PLOT,78,71,34,14,ES_AUTOHSCROLL
+    EDITTEXT        IDTCE_PWM_CUT,78,89,34,14,ES_AUTOHSCROLL
+    EDITTEXT        IDTCE_Z_POS,123,135,34,14,ES_AUTOHSCROLL
+    LTEXT           "画笔压力(10~90):",IDC_STATIC,11,73,62,8
+    LTEXT           "切刀压力(10~90):",IDC_STATIC,11,92,62,8
+    LTEXT           "Z轴目标位置(0.1mm)(50~400):",IDC_STATIC,11,138,106,8
+    CONTROL         "开启真空泵电机",IDTCHK_VMON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,38,98,10
+    CONTROL         "开启铣刀(除尘)电机",IDTCHK_MMON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,129,38,98,10
+    GROUPBOX        "",IDC_STATIC,7,3,233,180
+    LTEXT           "回默认原点(注意，机器将动作):",IDC_STATIC,11,18,135,8
+    PUSHBUTTON      "执行",IDTBTN_TO_DEFZP,164,14,64,14
+    PUSHBUTTON      "保存为工作笔压",IDTBTN_SAVEPP,164,72,64,14
+    PUSHBUTTON      "保存为工作刀压",IDTBTN_SAVECP,164,91,64,14
+    PUSHBUTTON      "保存为Z轴工作位置",IDTBTN_SAVE_WM,164,156,64,14
+    PUSHBUTTON      "确定",IDTBTN_OK,55,187,50,14
+END
+
+IDDLG_PARA_MAC DIALOGEX 0, 0, 255, 291
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "机器设置"
+FONT 10, "宋体", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "确定",IDOK,199,124,44,17,BS_FLAT
+    PUSHBUTTON      "取消",IDCANCEL,199,161,44,17,BS_FLAT
+    EDITTEXT        IDCE_SPD_PLOT,150,9,42,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_SPD_CUT,150,24,42,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_SPD_MILLING,150,39,42,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_SPD_MOVE,150,54,42,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_PWM_PLOT,150,69,42,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_PWM_CUT,150,84,42,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_POS_MOVE,150,99,42,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_POS_WORK,150,114,42,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_MPDIST_X,150,129,42,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_MPDIST_Y,150,144,42,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_KPDIST_X,150,159,42,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_KPDIST_Y,150,174,42,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_10000X,150,189,42,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_10000Y,150,204,42,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_ANGLE_ADJ,150,219,42,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_MMOTOR_DELAY,150,234,42,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "高级参数",IDBTN_PROCPARA,199,13,44,17,BS_FLAT
+    PUSHBUTTON      "保存参数",IDBTN_PARA_SAVE,199,50,44,17,BS_FLAT
+    PUSHBUTTON      "恢复参数",IDBTN_PARA_RESTORE,199,87,44,17,BS_FLAT
+    LTEXT           "绘图速度(1~5):",IDC_STATIC,10,12,134,8
+    LTEXT           "切割速度(1~5):",IDC_STATIC,10,27,134,8
+    LTEXT           "铣速度(1~100):",IDC_STATIC,10,42,134,8
+    LTEXT           "空程速度(1~5):",IDC_STATIC,10,57,134,8
+    LTEXT           "笔压(10~90):",IDC_STATIC,10,72,134,8
+    LTEXT           "刀压(10~90):",IDC_STATIC,10,87,134,8
+    LTEXT           "Z轴空程位置(*0.1mm)(0~300):",IDC_STATIC,10,102,134,8
+    LTEXT           "Z轴工作位置(*0.1mm)(50~400):",IDC_STATIC,10,117,134,8
+    LTEXT           "X轴铣刀与笔重合(*0.1mm)(0~100):",IDC_STATIC,10,132,134,8
+    LTEXT           "Y轴铣刀与笔重合(*0.1mm)(0~100):",IDC_STATIC,10,147,134,8
+    LTEXT           "X轴切刀与笔重合(*0.1mm)(0~100):",IDC_STATIC,10,162,134,8
+    LTEXT           "Y轴切刀与笔重合(*0.1mm)(0~100):",IDC_STATIC,10,177,134,8
+    LTEXT           "X轴1m实际输出(*0.1mm)(9000~11000):",IDC_STATIC,10,192,134,8
+    LTEXT           "Y轴1m实际输出(*0.1mm)(9000~11000):",IDC_STATIC,10,207,134,8
+    LTEXT           "垂直度校正(50~150):",IDC_STATIC,10,222,134,8
+    LTEXT           "铣刀电机启动延时(0~20秒):",IDC_STATIC,10,237,134,8
+    CONTROL         "开始工作时自动开启气泵",IDCHK_VMEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,253,134,8
+    GROUPBOX        "",IDC_STATIC,7,3,189,281
+END
+
+IDDLG_PARA_SOFT DIALOG 0, 0, 191, 148
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "软件设置"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,36,127,50,14
+    PUSHBUTTON      "取消",IDCANCEL,98,127,50,14
+    LTEXT           "铣刀直径(50~800)(*0.01mm):",IDC_STATIC,11,107,106,8
+    EDITTEXT        IDCE_DIRLL_DIMENSION,123,103,36,14,ES_AUTOHSCROLL
+    LTEXT           "编辑区域大小X(200~2000mm)：",IDC_STATIC,14,16,106,8
+    LTEXT           "编辑区域大小Y(200~2000mm)：",IDC_STATIC,14,32,106,8
+    EDITTEXT        IDCE_SIZEX,126,12,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_SIZEY,126,28,36,14,ES_AUTOHSCROLL
+    GROUPBOX        "显示相关",IDC_STATIC,6,4,179,42
+    GROUPBOX        "输出为plt笔号设置",IDC_STATIC,6,49,179,39
+    GROUPBOX        "其它设置",IDC_STATIC,6,92,179,29
+    LTEXT           "绘图",IDC_STATIC,14,69,16,8
+    LTEXT           "切割",IDC_STATIC,70,69,16,8
+    LTEXT           "钻孔",IDC_STATIC,126,69,16,8
+    EDITTEXT        IDCE_EXPORT_PENNUM,34,67,21,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_EXPORT_CUTNUM,93,67,21,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_EXPORT_DRILLNUM,146,67,21,14,ES_AUTOHSCROLL
+END
+
+IDDLG_PROP_SLOT DIALOG 0, 0, 147, 72
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "确定"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,10,49,50,14
+    PUSHBUTTON      "取消",IDCANCEL,86,49,50,14
+    EDITTEXT        IDCE_SLOT_WIDTH,95,8,40,14,ES_AUTOHSCROLL
+    LTEXT           "槽宽(0~50mm)",IDC_STATIC,16,11,47,8
+    LTEXT           "提示:若槽宽设置小于铣刀\n直径,则实际槽宽为铣刀直径",IDC_STATIC,16,25,105,17
+END
+
+IDDLG_GET_INPUT DIALOG 0, 0, 175, 35
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "输入"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,132,10,36,14
+    LTEXT           "字符串",IDTXT_INPUT,7,12,88,8
+    EDITTEXT        IDCE_D_INPUT,98,10,30,14,ES_AUTOHSCROLL
+END
+
+IDDLG_PARA_PROTECT DIALOG 0, 0, 179, 153
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "高级参数"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,27,127,50,14
+    PUSHBUTTON      "取消",IDCANCEL,100,127,50,14
+    EDITTEXT        IDCE_MAXPP_X,125,11,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_MAXPP_Y,125,26,40,14,ES_AUTOHSCROLL
+    LTEXT           "X轴实际长度(900~3000)(mm):",IDC_STATIC,12,11,106,8
+    LTEXT           "Y轴实际长度(900~3000)(mm):",IDC_STATIC,12,27,106,8
+    LTEXT           "X轴每mm脉冲数(50~500):",IDC_STATIC,12,75,106,8
+    LTEXT           "Y轴每mm脉冲数(50~500):",IDC_STATIC,12,91,106,8
+    EDITTEXT        IDCE_PPMMX,125,71,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_PPMMY,125,86,40,14,ES_AUTOHSCROLL
+    LTEXT           "Z轴每mm脉冲数(500~5000):",IDC_STATIC,12,107,106,8
+    EDITTEXT        IDCE_PPMMZ,125,101,40,14,ES_AUTOHSCROLL
+    LTEXT           "模板Y向起点微调(0~50mm):",IDC_STATIC,12,59,106,8
+    EDITTEXT        IDCE_WORK_STARTY,125,56,40,14,ES_AUTOHSCROLL
+    LTEXT           "模板X向起点微调(0~30mm):",IDC_STATIC,12,43,106,8
+    EDITTEXT        IDCE_WORK_STARTX,125,41,40,14,ES_AUTOHSCROLL
+END
+
+IDDLG_SUPER_USER DIALOG 0, 0, 233, 101
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "超级用户"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,25,80,50,14
+    PUSHBUTTON      "取消",IDCANCEL,99,80,50,14
+    LTEXT           "随机码:",IDC_STATIC,14,41,28,8
+    LTEXT           "认证码:",IDC_STATIC,14,61,28,8
+    EDITTEXT        IDCE_RANDPW,51,59,70,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "------",IDTXT_RAND_CODE,54,42,56,8
+    LTEXT           "请联系供应商获取认证码\n提示：点击确定按钮之前请勿关闭此窗口。否则需要获取新的验证码。",IDC_STATIC,10,8,211,24
+END
+
+IDDLG_REG DIALOG 0, 0, 293, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "输入注册信息"
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDCE_END_DATE,67,57,161,13,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "输入密码：",IDC_TXT_PW,12,18,41,8
+    EDITTEXT        IDCE_PASSWORD,64,16,164,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDOK,235,17,50,16
+    LTEXT           "序列号：",IDC_TXT1,11,21,40,8
+    LTEXT           "授权码:",IDC_TXT2,11,39,35,8
+    EDITTEXT        IDCE_SN,53,18,175,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDCE_CODE,53,38,175,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "输入授权码",IDCB_INPUT_REGCODE,235,36,50,16
+    LTEXT           "授权结束时间:",IDC_TXT3,11,58,52,8
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 223, 68
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于格美MCADII"
+FONT 12, "宋体", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,18,15,20,20
+    LTEXT           "格美模板输出中心2.4.1",IDC_STATIC,62,17,85,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "确定",IDOK,167,24,47,12,WS_GROUP
+    LTEXT           "http://www.whgmkj.com/",ID_HyperLinkWebSite,61,39,104,8
+    LTEXT           "Copy Right (C) 2016",IDC_STATIC,62,28,96,8
+    LTEXT           "发布日期:2016年12月06日",IDC_STATIC,17,50,100,8
+    LTEXT           "官方网站:",IDC_STATIC,15,38,37,8
+END
+
+IDDLG_PROP_LINE_ADD DIALOG 0, 0, 151, 83
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "属性"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,25,60,50,14
+    PUSHBUTTON      "取消",IDCANCEL,83,60,50,14
+    LTEXT           "长度：",IDC_STATIC,19,20,25,8
+    LTEXT           "角度：",IDC_STATIC,19,39,25,8
+    EDITTEXT        IDCE_LINE_LEN,63,17,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_LINE_ANGLE,63,38,40,14,ES_AUTOHSCROLL
+    LTEXT           "厘米",IDC_STATIC,108,19,16,8
+    LTEXT           "度",IDC_STATIC,109,40,8,8
+END
+
+IDDLG_PROP_DRILLTABLE DIALOG 0, 0, 134, 130
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "点阵设置"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,20,110,40,14
+    PUSHBUTTON      "取消",IDCANCEL,73,110,40,14
+    EDITTEXT        IDCE_DOTNUM_Y,81,55,40,14,ES_AUTOHSCROLL
+    LTEXT           "每列点数(Y向):",IDC_STATIC,12,59,65,8
+    EDITTEXT        IDCE_GAP_X,81,71,40,14,ES_AUTOHSCROLL
+    LTEXT           "列距(X向)(mm):",IDC_STATIC,12,75,65,8
+    LTEXT           "行距(Y向)(mm):",IDC_STATIC,12,91,65,8
+    EDITTEXT        IDCE_GAP_Y,81,87,40,14,ES_AUTOHSCROLL
+    LTEXT           "总列数(X向):",IDC_STATIC,12,43,65,8
+    EDITTEXT        IDCE_DOTNUM_X,81,39,40,14,ES_AUTOHSCROLL
+    LTEXT           "X向起点(mm):",IDC_STATIC,12,11,65,8
+    LTEXT           "Y向起点(mm):",IDC_STATIC,12,27,65,8
+    EDITTEXT        IDCE_START_Y,81,23,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_START_X,81,7,40,14,ES_AUTOHSCROLL
+END
+
+IDDLG_PROP_MEANDERLINE DIALOG 0, 0, 162, 121
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "蛇形线属性"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,26,95,50,14
+    PUSHBUTTON      "取消",IDCANCEL,97,95,50,14
+    EDITTEXT        IDCE_PLATFORM_XSIZE,107,15,40,14,ES_AUTOHSCROLL
+    LTEXT           "平台X向长度(mm):",IDC_STATIC,13,19,78,8
+    EDITTEXT        IDCE_PLATFORM_YSIZE,107,33,40,14,ES_AUTOHSCROLL
+    LTEXT           "平台Y向长度(mm):",IDC_STATIC,13,36,78,8
+    EDITTEXT        IDCE_GAP_X,107,51,40,14,ES_AUTOHSCROLL
+    LTEXT           "间距(mm):",IDC_STATIC,13,53,78,8
+    LTEXT           "折线方向(0X向 1Y向):",IDC_STATIC,13,70,78,8
+    EDITTEXT        IDCE_MMDIR,107,69,40,14,ES_AUTOHSCROLL
+END
+
+IDDLG_PROP_RECT DIALOG 0, 0, 151, 83
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "属性"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,25,60,50,14
+    PUSHBUTTON      "取消",IDCANCEL,83,60,50,14
+    LTEXT           "X向长度：",IDC_STATIC,14,20,42,8
+    LTEXT           "Y向长度：",IDC_STATIC,14,39,42,8
+    EDITTEXT        IDCE_RECT_SIZE_X,71,17,32,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_RECT_SIZE_Y,71,38,32,14,ES_AUTOHSCROLL
+    LTEXT           "mm",IDC_STATIC,108,19,9,8
+    LTEXT           "mm",IDC_STATIC,109,40,9,8
+END
+
+IDDLG_PROP_TEXT_ADD DIALOGEX 0, 0, 287, 148
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "文字属性"
+FONT 10, "宋体", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDCE_TEXT_CONTENT,50,66,230,50,ES_MULTILINE | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,68,122,50,14
+    PUSHBUTTON      "取消",IDCANCEL,173,122,50,14
+    LTEXT           "坐标X(mm)：",IDC_STATIC,14,21,49,8
+    LTEXT           "坐标Y(mm)：",IDC_STATIC,14,41,49,8
+    EDITTEXT        IDCE_TEXT_X,72,17,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDCE_TEXT_Y,72,38,50,14,ES_AUTOHSCROLL
+    LTEXT           "角度(-179~180度)：",IDC_STATIC,143,20,70,8
+    EDITTEXT        IDCE_TEXT_ANGLE,218,15,50,14,ES_AUTOHSCROLL
+    LTEXT           "文字内容：",IDC_STATIC,12,88,37,8
+    LTEXT           "字体大小(0~9)：",IDC_STATIC,143,40,70,8
+    EDITTEXT        IDCE_TEXT_INFLATE,218,38,50,14,ES_AUTOHSCROLL
+END
+
+IDD_DLGPROPTEXT DIALOG 0, 0, 320, 200
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话框"
+FONT 9, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,209,179,50,14
+    PUSHBUTTON      "取消",IDCANCEL,263,179,50,14
+END
+
+IDD_ABOUT_ALL DIALOGEX 0, 0, 223, 68
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于MCADII"
+FONT 12, "宋体", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,-1,18,15,20,20
+    LTEXT           "模板输出中心2.4.1",-1,62,17,69,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "确定",IDOK,167,24,47,12,WS_GROUP
+    LTEXT           "Copy Right (C) 2016",-1,62,32,96,8
+    LTEXT           "发布日期:2016年12月06日",-1,17,48,100,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,4,1,0
+ PRODUCTVERSION 2,4,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "模版切割机编辑排料输出控制中心"
+            VALUE "FileVersion", "2.4.1.0"
+            VALUE "InternalName", "MCAD"
+            VALUE "LegalCopyright", "YHZ 版权所有 (C) 2015"
+            VALUE "OriginalFilename", "MCADII.EXE"
+            VALUE "ProductName", "MCAD"
+            VALUE "ProductVersion", "2.4.1.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDDLG_PROP_OUTLINE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDDLG_PWD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 28
+    END
+
+    IDDLG_PROP_LINE_INFLATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDDLG_TEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDDLG_PARA_MAC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 284
+    END
+
+    IDDLG_PARA_SOFT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDDLG_PROP_SLOT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDDLG_GET_INPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 28
+    END
+
+    IDDLG_PARA_PROTECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDDLG_SUPER_USER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 94
+    END
+
+    IDDLG_REG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 286
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDDLG_PROP_LINE_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDDLG_PROP_DRILLTABLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 126
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 125
+    END
+
+    IDDLG_PROP_MEANDERLINE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDDLG_PROP_RECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDDLG_PROP_TEXT_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_DLGPROPTEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_ABOUT_ALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// BIN
+//
+
+IDR_FON_HZ              BIN                     "res\\fon_hz.bin"
+
+IDR_FON_EN              BIN                     "res\\fon_en.bin"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDDLG_PARA_MAC AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ABOUT_ALL AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "MCADV2\n工程1\n工程1\n模版工程文件(*.mprj2)\n.mprj2\nMCADV2.Document\n模版工程文件"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "MCAD"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "新建"
+    ID_FILE_OPEN            "打开模版工程文件(mprj2)\n打开模版工程文件(mprj2)"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_PT_MM               "坐标"
+    IDS_SYS_STATE           "正在连接"
+    IDS_PROGRESS            "进度条"
+    IDM_MAN_CTRL            "手动操作\n手动操作"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_PLT_IMPORT          "从plt文件中导入裁片\n从plt文件中导入裁片"
+    IDMP_MAKEACOPY          "复制裁片(F1)\n复制裁片(F1)"
+    IDMP_MIRROR             "裁片镜像(F2)\n裁片镜像(F2)"
+    IDMP_ADDOUTLINE1        "外框类型1(矩形外框)\n外框类型1(矩形外框)"
+    IDMP_ADDOUTLINE2        "外框类型2(沿着裁片外轮廓)\n外框类型2(沿着裁片外轮廓)"
+    IDMP_COMBINE            "几个裁片组合成一个裁片(F5)\n几个裁片组合成一个裁片(F5)"
+    IDMP_90CCW              "裁片旋转90度(F6)\n裁片旋转90度(F6)"
+END
+
+STRINGTABLE
+BEGIN
+    TDTB_ZOOMIN             "放大\n放大显示"
+    TDTB_ZOOMOUT            "缩小\n缩小"
+    TDTB_ZOOMALL            "全部显示\n全显(快捷键空格键)"
+END
+
+STRINGTABLE
+BEGIN
+    IDTBS_DRAW_LINE         "绘制线段\n绘制线段"
+    IDTBS_DRAW_CURVE        "绘制曲线\n绘制曲线"
+    IDTBS_DRAW_RECT         "绘制矩形\n绘制矩形"
+    IDTBS_ADRILL            "打孔\n打孔"
+    IDTBS_SCURVE            "选线模式(按住Ctrl或Shift可多选哦)\n选线模式"
+    IDTBS_SPIECE            "选片模式(提示:按住Ctrl或Shift可多选哦)\n选片模式"
+    IDTBS_CUT_SEQ           "设置裁片切割顺序(分别点击每个裁片以设置顺序)\n设置裁片切割顺序"
+END
+
+STRINGTABLE
+BEGIN
+    IDMP_01CCW              "裁片逆时针旋转1度(F7)\n裁片逆时针旋转1度(F7)"
+    IDMP_01CW               "裁片顺时针旋转1度(F8)\n裁片顺时针旋转1度(F8)"
+    IDMP_SEL_TOLIST         "裁片放回列表\n裁片放回列表"
+    IDMP_REMOVE_ALL         "清空当前页中的裁片\n清空当前页中的裁片(F11)"
+    IDMP_COPY_MIRROR        "裁片复制后镜像\n裁片复制后镜像"
+    IDML_TO_PEN             "选中曲线变为笔(Ctrl+1)\n选中曲线变为笔(Ctrl+1)"
+    IDML_TO_MM              "选中曲线变为铣(Ctrl+2)\n选中曲线变为铣(Ctrl+2)"
+END
+
+STRINGTABLE
+BEGIN
+    IDML_CURVE_TO_SLOT      "选中曲线变为开槽(快捷键C)\n选中曲线变为开槽(快捷键C)"
+    IDML_CURVE_MERGE        "将选中的线段合并成一条曲线(快捷键H)\n将选中的线段合并成一条曲线(快捷键H)"
+    IDML_CURVE_REVERSE      "选中曲线反向快捷键F)\n选中曲线反向(快捷键F)"
+    IDML_BK_BY_ANGLE        "按角度打断(快捷键D)\n按角度打断(快捷键D)"
+    IDML_POLY_INFLATE       "闭合曲线外扩\n闭合曲线外扩"
+    IDML_POLY_SHRINK        "闭合曲线内缩\n闭合曲线内缩"
+    IDML_CURVE_EXPAND       "非闭合曲线延长或者缩短\n非闭合曲线延长或者缩短"
+    IDML_FORCE_TO_POLY      "曲线强制闭合(首尾相连)\n曲线强制闭合(首尾相连)"
+    IDML_SET_CURVE_START    "设置闭合曲线起始点"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\MCAD.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
